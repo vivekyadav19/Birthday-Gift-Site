@@ -1,0 +1,210 @@
+/*
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image 
+(class vs id vs element selector).
+*/
+
+/* font-family: 'Happy Monkey', cursive; */
+
+/*
+Challenge:
+Add colors to the site based on the provided design.
+
+pink: #EFB0C9
+blue: #a2d2ff
+white: #ffffff
+*/
+/*
+Challenge:
+First, wrap the HTML elements in a <div> with an 
+id called "header".
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+/*
+Challenge:
+Make the bday elements look like the
+provided design slide.
+*/
+
+/*
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide.
+*/
+
+/*
+Challenge:
+"Fix" the "gift-img" <div> so that it looks 
+like the provided design again.
+
+It needs a height (should be a square), a
+background image, and to be centered again.
+*/
+/*
+Challenge:
+Swap the gift paper image out with
+the happy.gif when you hover over it!
+*/
+/*
+Challenge:
+Create the next GIFt (hot.gif). Its HTML structure 
+should be like the previous one, but without the 
+"gift-hint" element.
+
+However, now that you have multiple GIFts on the page,
+you cannot use the "gift-img" class to set the GIF 
+background-image(s) on :hover. Each GIFt will need a 
+unique id that controls which background image that 
+should be shown when hovering over the element.
+*/
+
+/*
+Challenge:
+Create the "genius" and "badass" GIFt sections.
+
+Texts:
+If I had to describe you with ONE word 👇
+
+The only person as badass as you 💪
+
+*/
+
+/*
+Challenge:
+Create the "cheers" GIFt section.
+
+Note: this GIFt should have a height of 200px. 
+Select the #gift-img-cheers id and override 
+the height that the element got from the 
+.gift-img class.
+
+Text: 
+This one's for you, my friend 🥂
+*/
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
+
+/*
+Challenge:
+Change the site's background into a gradient that goes
+from blue at the top to pink at the bottom.
+*/
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h4, p {
+    text-shadow: 0px 0px 1px black;
+}
+
+#profile-img {
+    width: 150px;
+    border: 6px solid #EFB0C9;
+    border-radius: 70px;
+}
+
+#birthday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#birthday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+.gift-cover-img {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    border: 7px solid white;
+    border-radius: 10px;
+    background-image: url(gift-cover.jpg);
+    background-size: cover;
+}
+
+#gift-cover-happy:hover {
+    background-image: url(https://media4.giphy.com/media/YnBntKOgnUSBkV7bQH/giphy.gif?cid=ecf05e47gcznq5cyjfvhqolq0930rs7cq6duf68gev66gz5q&rid=giphy.gif&ct=g);
+}
+
+#gift-cover-hot:hover {
+    background-image: url(https://media2.giphy.com/media/FbfTmoY3Re6d2xELcM/giphy.gif?cid=ecf05e47y7wy5y5n5hhsbrla2vvg4bb3vbjcyqhxxuv8em7e&rid=giphy.gif&ct=g);
+}
+
+#gift-cover-genius:hover {
+    background-image: url(https://media1.giphy.com/media/3o85xr9ZKY1wbbJXDW/giphy.gif?cid=ecf05e47cxcm2lx13ijbjsbz02m4yd6onnodgh7erd1oq1lg&rid=giphy.gif&ct=g);
+}
+
+#gift-cover-badass:hover {
+    background-image: url(https://i.pinimg.com/originals/b9/2d/ff/b92dff4da3281f07a64b52a15b017400.gif);
+}
+
+#gift-cover-cheers{
+    height: 200px;
+}
+#gift-cover-cheers:hover {
+    background-image: url(https://media1.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif?cid=ecf05e4780z142dmc62u6d6phgyladf6avf3vsi4hy8egug1&rid=giphy.gif&ct=g);
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+/* Birthday Gift Site Completed */
